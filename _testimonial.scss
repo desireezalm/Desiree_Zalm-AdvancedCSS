@@ -1,0 +1,62 @@
+.testimonial-container {
+  max-height: 1100px;
+  background-color: $backgroundColorMedium;
+  padding: $paddingMedium;
+  max-width: 70%;
+  & .testimonial {
+    max-height: 1000px;
+    min-height: 400px;
+    width: 430px;
+    background-color: $backgroundColorLight;
+    padding-top: $paddingSmall;
+    padding-bottom: $paddingNone;
+    padding-left: $paddingNone;
+    padding-right: $paddingNone;
+    @include borderShadow;
+    & p {
+      min-height: 100px;
+      background-color: $backgroundColorLight;
+      padding: $paddingSmall $paddingMedium $paddingMedium $paddingMedium;
+      margin-bottom: 70px;
+      margin-left: $marginSmall;
+      margin-right: $marginSmall;
+    }
+
+    & footer {
+      height: 170px;
+      line-height: 0.5em;
+      text-align: center;
+      background-color: $backgroundColorDark;
+      padding: $paddingSmall;
+      border-bottom-left-radius: $radiusSmall;
+      border-bottom-right-radius: $radiusSmall;
+      & img {
+        width: 120px;
+        height: 120px;
+        display: block;
+        padding: $paddingNone;
+        @include roundBorder;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -21%;
+      }
+      & h1 {
+        text-transform: uppercase;
+        color: $fontColorLight;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        padding-top: $paddingSmall;
+        margin-top: $marginMedium;
+      }
+      & a {
+        display: block;
+        color: $fontColorMedium;
+        font-size: 19px;
+        text-decoration: none;
+        padding-bottom: $paddingSmall;
+        margin: $marginNone;
+      }
+    }
+  }
+}

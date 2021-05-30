@@ -1,0 +1,36 @@
+$backgroundColorMedium: #c3cfe2;
+$backgroundColorLight: #fff;
+$backgroundColorDark: #686de0;
+$fontColorDark: #666;
+$fontColorLight: #fff;
+$fontColorMedium: #b5bafd;
+$paddingMedium: 20px;
+$paddingSmall: 10px;
+$paddingLarge: 30px;
+$paddingXLarge: 50px;
+$paddingNone: 0px;
+$radiusSmall: 20px;
+$marginNone: 0px;
+$marginSmall: 10px;
+$marginMedium: 20px;
+
+@mixin textStyle {
+  max-width: 370px;
+  text-align: center;
+  padding: $primaryPadding;
+}
+
+@mixin roundBorder {
+  border: 8px solid #fff;
+  border-radius: 90%;
+}
+
+@mixin borderShadow {
+  border-radius: $radiusSmall;
+  box-shadow: 0px 8px 10px 8px #9199a7;
+}
+
+@mixin layoutSocials {
+  color: white;
+  padding: $paddingSmall $paddingXLarge $paddingSmall $paddingSmall;
+}

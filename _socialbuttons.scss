@@ -1,0 +1,64 @@
+.social-bar {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  bottom: 50%;
+  right: -345px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  & .icon {
+    display: block;
+    position: relative;
+    transition: transform 500ms ease-in-out 400ms;
+    -webkit-transition: transform 500ms ease-in-out 400ms;
+    -moz-transition: transform 500ms ease-in-out 400ms;
+    -ms-transition: transform 500ms ease-in-out 400ms;
+    &:hover {
+      transform: translateX(-175px);
+    }
+    a {
+      cursor: pointer;
+      display: inline-block;
+      text-align: left;
+      text-decoration: none;
+      padding-top: $paddingSmall;
+      padding-bottom: $paddingSmall;
+      padding-right: 100px;
+      color: white;
+      font-size: 16px;
+      i {
+        padding-left: $paddingSmall;
+        padding-right: $paddingLarge;
+        position: relative;
+        display: inline;
+      }
+    }
+    & .blog {
+      background-color: #e17b77;
+      @include layoutSocials;
+    }
+
+    & .facebook {
+      background: #3b5998;
+      @include layoutSocials;
+    }
+
+    & .twitter {
+      background: #00aced;
+      @include layoutSocials;
+    }
+
+    & .linkedin {
+      background: #007bb6;      
+      @include layoutSocials;
+    }
+
+    & .github {
+      background-color: #333;
+      @include layoutSocials;
+    }
+  }
+}
